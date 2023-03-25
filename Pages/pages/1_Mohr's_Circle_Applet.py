@@ -47,7 +47,7 @@ df = pd.DataFrame({'x': [p_stress1, p_stress2, center_x, center_x,sigma_x,sigma_
                    'y': [0, 0, 0, max_shear,tau_xy,-tau_xy,tau_x1y1,-tau_x1y1],
                    'Stresses': ['Principal', 'Principal', 'Average', 'Max Shear','Applied','Applied','Rotated','Rotated']})
 
-fig = px.scatter(df, x = "x", y = "y", color = "Stresses")
+fig = px.scatter(df, x = "σ", y = "τ", color = "Stresses")
 
 
 fig.update_xaxes(nticks=5)
