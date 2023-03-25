@@ -54,8 +54,9 @@ fig.update_xaxes(nticks=5)
 fig.update_yaxes(nticks=5,scaleanchor = "x",scaleratio = 1,)
 
 
-fig.update_layout(xaxis_title='r$\sigma$ '+Unit, yaxis_title='test '+Unit)
+fig.update_layout(xaxis_title=r'$d, r \text{ (solar radius)}$'+Unit, yaxis_title='test '+Unit)
 fig.update_yaxes(autorange="reversed")
+
 
 
 fig.add_shape(type="circle",
