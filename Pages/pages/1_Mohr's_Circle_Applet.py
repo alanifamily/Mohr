@@ -54,7 +54,7 @@ fig.update_xaxes(nticks=5)
 fig.update_yaxes(nticks=5,scaleanchor = "x",scaleratio = 1,)
 
 
-fig.update_layout(xaxis_title="σ"+Unit, yaxis_title='test '+Unit)
+fig.update_layout(xaxis_title="σ "+Unit, yaxis_title='τ '+Unit)
 fig.update_yaxes(autorange="reversed")
 
 
