@@ -43,11 +43,11 @@ center_y = 0
 
 
 
-df = pd.DataFrame({'x': [p_stress1, p_stress2, center_x, center_x,sigma_x,sigma_y,sigma_x1,sigma_y1],
+df = pd.DataFrame({'σ': [p_stress1, p_stress2, center_x, center_x,sigma_x,sigma_y,sigma_x1,sigma_y1],
                    'y': [0, 0, 0, max_shear,tau_xy,-tau_xy,tau_x1y1,-tau_x1y1],
                    'Stresses': ['Principal', 'Principal', 'Average', 'Max Shear','Applied','Applied','Rotated','Rotated']})
 
-fig = px.scatter(df, x = "σ", y = "τ", color = "Stresses")
+fig = px.scatter(df, x = "σ", y = "y", color = "Stresses")
 
 
 fig.update_xaxes(nticks=5)
